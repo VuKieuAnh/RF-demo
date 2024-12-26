@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<ca &le; 0.5<br/>gini = 0.496<br/>samples = 157<br/>value = [110, 132]<br/>class = Disease>, fillcolor="#deeffb"] ;
+1 [label=<thal &le; 2.5<br/>gini = 0.397<br/>samples = 91<br/>value = [38, 101]<br/>class = Disease>, fillcolor="#83c2ef"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<exang &le; 0.5<br/>gini = 0.229<br/>samples = 59<br/>value = [12, 79]<br/>class = Disease>, fillcolor="#57ace9"] ;
+1 -> 2 ;
+3 [label=<gini = 0.095<br/>samples = 51<br/>value = [4, 76]<br/>class = Disease>, fillcolor="#43a2e6"] ;
+2 -> 3 ;
+4 [label=<gini = 0.397<br/>samples = 8<br/>value = [8, 3]<br/>class = No Disease>, fillcolor="#efb083"] ;
+2 -> 4 ;
+5 [label=<exang &le; 0.5<br/>gini = 0.497<br/>samples = 32<br/>value = [26, 22]<br/>class = No Disease>, fillcolor="#fbece1"] ;
+1 -> 5 ;
+6 [label=<gini = 0.346<br/>samples = 17<br/>value = [6, 21]<br/>class = Disease>, fillcolor="#72b9ec"] ;
+5 -> 6 ;
+7 [label=<gini = 0.091<br/>samples = 15<br/>value = [20, 1]<br/>class = No Disease>, fillcolor="#e68743"] ;
+5 -> 7 ;
+8 [label=<exang &le; 0.5<br/>gini = 0.421<br/>samples = 66<br/>value = [72, 31]<br/>class = No Disease>, fillcolor="#f0b78e"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<trestbps &le; 109.0<br/>gini = 0.489<br/>samples = 41<br/>value = [35, 26]<br/>class = No Disease>, fillcolor="#f8dfcc"] ;
+8 -> 9 ;
+10 [label=<gini = 0.198<br/>samples = 4<br/>value = [1, 8]<br/>class = Disease>, fillcolor="#52a9e8"] ;
+9 -> 10 ;
+11 [label=<gini = 0.453<br/>samples = 37<br/>value = [34, 18]<br/>class = No Disease>, fillcolor="#f3c4a2"] ;
+9 -> 11 ;
+12 [label=<chol &le; 287.0<br/>gini = 0.21<br/>samples = 25<br/>value = [37, 5]<br/>class = No Disease>, fillcolor="#e99254"] ;
+8 -> 12 ;
+13 [label=<gini = 0.145<br/>samples = 22<br/>value = [35, 3]<br/>class = No Disease>, fillcolor="#e78c4a"] ;
+12 -> 13 ;
+14 [label=<gini = 0.5<br/>samples = 3<br/>value = [2, 2]<br/>class = No Disease>, fillcolor="#ffffff"] ;
+12 -> 14 ;
+}
